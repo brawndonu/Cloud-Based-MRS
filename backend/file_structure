@@ -1,0 +1,73 @@
+cloud-music-recommendation/
+├── .vscode/                     # VS Code workspace settings
+│   ├── settings.json
+│   └── extensions.json
+│
+├── frontend/                    # React.js/Angular web interface
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── components/          # React components (Dashboard, Playlist, etc.)
+│   │   ├── services/            # API service layer (Spotify, recommendations)
+│   │   ├── styles/              # CSS/SCSS files
+│   │   ├── App.jsx
+│   │   └── index.js
+│   ├── package.json
+│   └── .env.local               # Frontend environment variables
+│
+├── backend/                     # Python API (FastAPI/Flask)
+│   ├── app/
+│   │   ├── api/                 # API endpoints
+│   │   │   ├── recommendations.py
+│   │   │   └── spotify_integration.py
+│   │   ├── models/              # Database models
+│   │   ├── utils/               # Helper functions
+│   │   └── main.py              # Entry point
+│   ├── requirements.txt
+│   ├── Dockerfile
+│   └── .env                     # Backend secrets
+│
+├── ml_models/                   # Recommendation engine
+│   ├── data_preprocessing/      # Spark/Hadoop jobs
+│   │   └── listening_history_etl.py
+│   ├── training/                # Jupyter notebooks/scripts
+│   │   ├── collaborative_filtering.ipynb
+│   │   └── neural_network.py
+│   ├── saved_models/            # Trained model binaries
+│   └── evaluation/              # Accuracy metrics
+│
+├── cloud_infra/                 # Infrastructure-as-Code (Terraform)
+│   ├── gcp/                     # OR aws/
+│   │   ├── kubernetes.tf        # GKE/EKS cluster config
+│   │   ├── storage.tf           # Cloud Storage/S3 buckets
+│   │   └── variables.tf
+│   └── scripts/
+│       └── spark_cluster_setup.ps1  # Windows PowerShell scripts
+│
+├── data_processing/             # Apache Spark jobs
+│   ├── batch_processing/        # Scheduled jobs
+│   └── stream_processing/       # Real-time analysis
+│
+├── spotify_integration/         # Spotify Web API handlers
+│   ├── auth/                    # OAuth2 flows
+│   └── data_pipeline/           # Ingestion scripts
+│
+├── database/                    # SQL/NoSQL configs
+│   ├── migrations/              # Schema changes
+│   └── queries/                 # Common queries
+│
+├── tests/                       # Testing suite
+│   ├── unit_tests/
+│   └── integration_tests/
+│
+├── docs/                        # Documentation
+│   ├── architecture.md          # System diagram
+│   └── setup_guide.md           # Windows-specific instructions
+│
+├── scripts/                     # Utility scripts
+│   ├── deploy.ps1               # Deployment script
+│   └── data_ingestion.ps1
+│
+├── .gitignore
+├── README.md
+└── report.pdf                   # Final project report
